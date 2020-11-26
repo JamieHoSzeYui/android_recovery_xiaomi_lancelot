@@ -51,10 +51,10 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := zImage
-TARGET_KERNEL_ARCH := unknown
-TARGET_KERNEL_HEADER_ARCH := unknown
-TARGET_KERNEL_SOURCE := kernel/xiaomi/lancelot
-TARGET_KERNEL_CONFIG := lancelot_defconfig
+# TARGET_KERNEL_ARCH := unknown
+# TARGET_KERNEL_HEADER_ARCH := unknown
+# TARGET_KERNEL_SOURCE := kernel/xiaomi/lancelot
+# TARGET_KERNEL_CONFIG := lancelot_defconfig
 
 # Ramdisk compression
 LZMA_RAMDISK_TARGETS := recovery
