@@ -1,0 +1,9 @@
+on init
+    setprop sys.usb.ffs.aio_compat 1
+
+on property:vendor.kpdpwr.reset.enabled=0
+    write /sys/bus/platform/drivers/mtk-kpd/kpd_long_press_is_reboot 0
+
+on property:vendor.kpdpwr.reset.enabled=1
+    write /sys/bus/platform/drivers/mtk-kpd/kpd_long_press_is_reboot 1
+
