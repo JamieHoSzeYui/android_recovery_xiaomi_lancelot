@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_lancelot.mk
+     $(LOCAL_DIR)/lineage_lancelot.mk

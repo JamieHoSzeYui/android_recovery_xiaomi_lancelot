@@ -24,14 +24,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from lancelot device
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lancelot
-PRODUCT_NAME := omni_lancelot
+PRODUCT_NAME := lineage_lancelot
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := lancelot
+PRODUCT_MODEL := Redmi 9
 PRODUCT_MANUFACTURER := xiaomi
-PRODUCT_RELEASE_NAME := Redmi lancelot
+PRODUCT_RELEASE_NAME := lancelot
